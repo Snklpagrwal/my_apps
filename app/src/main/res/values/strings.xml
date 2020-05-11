@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Yp_directory</string>
+    <string name="name">Name</string>
+    <string name="search_baar">Search local business in India</string>
+    <string name="signup">Sign Up</string>
+    <string name="category">Category</string>
+    <string name="yellow_pages_directory">Yellow Pages Directory</string>
+    <string name="todo">TODO</string>
+</resources>

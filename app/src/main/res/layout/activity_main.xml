@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcgrnd"
+    tools:context=".MainActivity" >
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/bg_white_rounded"
+        android:queryHint="@string/search_baar"
+        android:clickable="true"
+        android:focusable="true" />
+
+<LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnSignUp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="false"
+        android:text="@string/signup"
+        android:textColor="@android:color/black"
+        app:fButtonColor="@color/btnSignUp"
+        app:shadowColor="@android:color/black"
+        app:shadowEnabled="true"
+        app:shadowHeight="6dp"
+        app:cornerRadius="4dp"
+        />
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/category"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="false"
+        android:text="@string/category"
+        android:textColor="@android:color/black"
+        app:fButtonColor="@color/category"
+        app:shadowColor="@android:color/black"
+        app:shadowEnabled="true"
+        app:shadowHeight="6dp"
+        app:cornerRadius="4dp"
+        />
+
+
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="291dp"
+        android:layout_marginEnd="131dp"
+        app:srcCompat="@drawable/ypaus"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="141dp"
+        android:fontFamily="@font/courgette"
+        android:includeFontPadding="true"
+        android:shadowColor="#FFFFFF"
+        android:text="@string/yellow_pages_directory"
+        android:textColor="@android:color/holo_orange_light"
+        android:textColorHighlight="@color/fbutton_color_emerald"
+        android:textSize="30sp" />
+
+</RelativeLayout>
